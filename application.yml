@@ -1,4 +1,6 @@
 eureka:
   client:
+    fetch-registry: true  # Fetch the registry from the Eureka server
+    register-with-eureka: true  # Register this config server with Eureka
     service-url:
-      defaultZone: http://localhost:9091/eureka/
+      defaultZone: http://localhost:8082/eureka/  # Eureka server URL
